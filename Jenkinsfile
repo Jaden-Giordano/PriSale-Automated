@@ -1,9 +1,25 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'node:latest'
+    }
+    
+  }
   stages {
-    stage('') {
+    stage('Init') {
       steps {
-        echo 'Hi there'
+        sh '''npm install
+'''
+      }
+    }
+    stage('Lint') {
+      steps {
+        sh 'npm run eslint'
+      }
+    }
+    stage('Unit Test') {
+      steps {
+        sh 'npm run mocha'
       }
     }
   }
