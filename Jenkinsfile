@@ -8,6 +8,7 @@ pipeline {
   stages {
     stage('Init') {
       steps {
+        echo 'Installing dependencies'
         sh 'npm install'
       }
     }
@@ -19,6 +20,11 @@ pipeline {
     stage('Unit Test') {
       steps {
         sh 'npm run mocha'
+      }
+    }
+    stage('Finish') {
+      steps {
+        echo 'Complete!'
       }
     }
   }
