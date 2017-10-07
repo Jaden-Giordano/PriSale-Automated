@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master.svg?style=svg)](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master)
+Build: [![CircleCI](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master.svg?style=svg)](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master)
 
 # carriage-craigslist-rest
 
