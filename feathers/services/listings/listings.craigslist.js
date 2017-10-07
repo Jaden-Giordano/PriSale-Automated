@@ -23,7 +23,7 @@ function query() {
 					search[i].url = search[i].url.replace(/https:\/\/atlanta\.craigslist\.org/, '');
 
 			return resolve(search);
-		}, (err) => { return reject(err) });
+		}, (err) => reject(err) );
 	});
 }
 
@@ -40,7 +40,7 @@ function createDBObject(listing) {
 		craigslistListing: listing
 	};
 
-	let make = model = year = miles = false;
+	let make = false, model = false, year = false, miles = false;
 
 	if (make) dbObject.details.make = make;
 	if (model) dbObject.details.model = model;
@@ -71,6 +71,8 @@ module.exports = async (app) => {
 			// If database already contains listings ignore it.
 			if (await listings_service.get(listing.id)) continue;
 
+
+			// eslint-disable-next-line no-unused-vars
 			const dbObject = createDBObject(listing);
 
 			await delay(2000);

@@ -36,6 +36,7 @@ module.exports = function () {
 		let now = new Date();
 		let delay = 60000 - (now % 60000);
 
+		// eslint-disable-next-line no-console
 		console.log(now.getHours() + ':' + now.getMinutes() + ' | ' + ~~splitTime[0] + ':' + ~~splitTime[1]);
 		if (now.getHours() === ~~splitTime[0] && now.getMinutes() === ~~splitTime[1])
 			craigslist(app);
