@@ -34,7 +34,7 @@
     "db": "carriage_craigslist",
     "servers": [
       {
-        "host": "165.227.181.104",
+        "host": "159.203.88.188",
         "port": "28015"
       }
     ]
