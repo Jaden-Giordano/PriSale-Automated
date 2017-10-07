@@ -1,4 +1,4 @@
-# carriage-craigslist-rest
+# carriage-craigslist-rest [![CircleCI](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master.svg?style=svg)](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master)
 
 > REST API for carriage-craigslist app
 
