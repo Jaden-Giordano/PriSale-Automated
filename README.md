@@ -1,5 +1,7 @@
 # carriage-craigslist-rest [![CircleCI](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master.svg?style=svg)](https://circleci.com/gh/Jaden-Giordano/PriSale-Automated/tree/master)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Jaden-Giordano/PriSale-Automated.svg)](https://greenkeeper.io/)
+
 > REST API for carriage-craigslist app
 
 ## About
